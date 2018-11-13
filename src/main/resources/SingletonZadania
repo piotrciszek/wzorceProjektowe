@@ -4,4 +4,3 @@ Celem licznika jest przechowywanie aktualnych numerów klientów.
 Mamy pocztę, a na poczcie 3 sposoby wygenerowania numerku.
 1 sposób to przez automat, 2 przez rejestrację (okienko), 3 przez internet. (3 klasy)
 W linii poleceń 3 komendy generują różne tickety uzyskując dostęp do tej samej instancji
-singletona z 3 miejsc.

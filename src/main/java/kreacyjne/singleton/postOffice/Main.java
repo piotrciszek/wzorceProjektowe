@@ -6,5 +6,6 @@ public class Main {
         postOffice.fromAutomat();
         postOffice.fromWebsite();
         postOffice.fromWindow();
+        postOffice.fromWebsite();
     }
 }
