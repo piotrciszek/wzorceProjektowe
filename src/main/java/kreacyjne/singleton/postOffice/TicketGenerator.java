@@ -5,6 +5,7 @@ public enum TicketGenerator {
 
     private int ticketNumber = 0;
     public int generateNumber() {
+        System.out.println("Pobrano ticket");
         return ticketNumber++;
     }
 }
