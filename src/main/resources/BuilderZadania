@@ -45,3 +45,33 @@ yearNumber2: 0
 yearNumber3: 0
 yearNumber4: 1
 caseNumber: 1
+
+Zadanie3 Aplikacja
+Stworzymy aplikację symulującą komunikację między użytkownikami. Aplikacja będzie
+działać na zasadzie pokoju chat'owego.
+Stwórz klasę Mail która posiada pola:
+- tresc
+- nadawca
+- data nadania
+- data odbioru
+- adres ip nadania
+- adres ip odebrania
+- nazwe serwera posredniego
+- nazwe skrzynki pocztowej
+- protokol komunikacji
+- typ wiadomości (UNKNOWN, OFFER, SOCIAL, NOTIFICATIONS, FORUM)
+- flagę(boolean) - czy szyfrowane
+- flagę(boolean) - isSpam
+Stwórz klasę Client która:
+- posiada pole name
+- posiada pole List<Mail> - lista/skrzynka wiadomości klienta
+- readMail(Mail m) - która powoduje dodanie wiadomości do skrzynki i wypisanie
+komunikatu:
+"Klient " + this.getName() + " otrzymal maila"
+Stwórz klasę MailServer która posiada listę podłączonych klientów (pole klasy). Metody:
+- connect(Client c) - powoduje podłączenie klienta do serwera, czyli dodanie go do
+listy ( tej która jest polem klasy)
+- disconnect(Client c) - powoduje odłączenie klienta
+- sendMessage(Mail m, Client sender) - powoduje rozesłanie wiadomości do
+wszystkich klientów oprócz nadawcy. Przed przekazaniem wiadomości należy ustawić jej
+datę odebrania na teraz (now()).
