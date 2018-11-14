@@ -48,4 +48,14 @@ public class Bike {
         this.bikeType = bikeType;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "Bike{" +
+                "marka='" + marka + '\'' +
+                ", iloscMiejsc=" + iloscMiejsc +
+                ", iloscPrzerzutek=" + iloscPrzerzutek +
+                ", bikeType=" + bikeType +
+                '}';
+    }
 }
