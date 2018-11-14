@@ -9,3 +9,14 @@ COMPUTER_BRAND: ASUS, HP, SAMSUNG, APPLE
 Stwórz klasy dziedziczące:
 AsusPC, HpPC, SamsungPC, AppleMac które dziedziczą po komputerze.
 W każdej klasie stwórz metody factory. Dla każdej marki wymyśl dwa komputery
+
+Zadanie2
+Należy stworzyć aplikację symulującą fabrykę rowerów. Klasa Bike: ma markę, ilość miejsc,
+ilość przerzutek, oraz typ rowera (bicycle, tandem).
+BIKE_TYPE: BICYCLE, TANDEM
+Stwórz i przetestuj fabrykę abstrakcyjną (BikeFactory) która pozwala na tworzenie:
+Rowerów jednoosbowych, marki KROSS, które mają 5 przerzutek
+Rowerów jednoosbowych, marki MERIDA, które mają 6 przerzutek
+Tandemów, marki INIANA, które mają 3 przerzutki
+Rowerów jednoosbowych, marki FELT, które mają 6 przerzutek
+Tandemów, marki GOETZE, które mają jedną przerzutkę
