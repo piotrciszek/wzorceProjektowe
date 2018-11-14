@@ -1,13 +1,16 @@
 package kreacyjne.abstractFactory.zadanie3.dziekanat;
 
+import kreacyjne.abstractFactory.zadanie3.aplikacja.Person;
+
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class SchoolarshipApplication extends Application{
     private List<Double> grades;
     private List<String> extracurricularActivities;
 
-    public SchoolarshipApplication(LocalDate dataUtworzenia, String miejsceUtworzenia, Person daneAplikanta, String tresc, List<Double> grades, List<String> extracurricularActivities) {
+    public SchoolarshipApplication(LocalDateTime dataUtworzenia, String miejsceUtworzenia, Person daneAplikanta, String tresc, List<Double> grades, List<String> extracurricularActivities) {
         super(dataUtworzenia, miejsceUtworzenia, daneAplikanta, tresc);
         this.grades = grades;
         this.extracurricularActivities = extracurricularActivities;

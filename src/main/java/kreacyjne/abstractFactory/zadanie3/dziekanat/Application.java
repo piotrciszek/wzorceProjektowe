@@ -1,25 +1,28 @@
 package kreacyjne.abstractFactory.zadanie3.dziekanat;
 
+import kreacyjne.abstractFactory.zadanie3.aplikacja.Person;
+
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Application {
-    private LocalDate dataUtworzenia;
+    private LocalDateTime dataUtworzenia;
     private String miejsceUtworzenia;
     private Person daneAplikanta;
     private String tresc;
 
-    public Application(LocalDate dataUtworzenia, String miejsceUtworzenia, Person daneAplikanta, String tresc) {
+    public Application(LocalDateTime dataUtworzenia, String miejsceUtworzenia, Person daneAplikanta, String tresc) {
         this.dataUtworzenia = dataUtworzenia;
         this.miejsceUtworzenia = miejsceUtworzenia;
         this.daneAplikanta = daneAplikanta;
         this.tresc = tresc;
     }
 
-    public LocalDate getDataUtworzenia() {
+    public LocalDateTime getDataUtworzenia() {
         return dataUtworzenia;
     }
 
-    public Application setDataUtworzenia(LocalDate dataUtworzenia) {
+    public Application setDataUtworzenia(LocalDateTime dataUtworzenia) {
         this.dataUtworzenia = dataUtworzenia;
         return this;
     }
