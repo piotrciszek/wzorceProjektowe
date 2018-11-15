@@ -1,0 +1,25 @@
+Zadanie1
+Simple CarShop
+Domyślnie każdy samochód który wychodzi z fabryki (możesz stworzyć prostą fabrykę
+abstrakcyjną kilku modeli samochodów, ale nie musisz) posiada kilka parametrów.
+Stwórz klasę CarShop która zajmuje się tuningowaniem samochodów.
+Stwórz interfejs ICar który posiada metody :
+- getHorsePower();
+- hasCharger();
+- getEngineCapacity();
+- getChargerPressure();
+Stwórz klasę Car która posiada pola:
+- double chargerPressure;
+- double engineCapacity;
+- int seatsNumber;
+- boolean hasCharger;
+- double horsePower;
+i implementuje interfejs ICar
+Stwórz klasę TunedCar (stuningowany samochód) który dekoruje samochód;
+Propozycja jak zrobić:
+Stwórz w klasie CarShop metodę tuningującą która zwraca tuningowany samochód
+public ICar addExtraCharger(Car c); - zwiększa chargerPressure i ustawia hasCharger
+na true jesli jest na false. Zwieksza moc o 10%
+public ICar addExtraEngine(Car c); - zwiększa pojemność silnika i moc o 20%
+public ICar addSeats(Car c); - zmniejsza moc o 50%;
+Przetestuj działanie aplikacji.
