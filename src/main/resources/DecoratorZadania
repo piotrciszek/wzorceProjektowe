@@ -5,7 +5,7 @@ abstrakcyjną kilku modeli samochodów, ale nie musisz) posiada kilka parametró
 Stwórz klasę CarShop która zajmuje się tuningowaniem samochodów.
 Stwórz interfejs ICar który posiada metody :
 - getHorsePower();
-- hasCharger();
+- isHasCharger();
 - getEngineCapacity();
 - getChargerPressure();
 Stwórz klasę Car która posiada pola:
