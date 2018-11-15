@@ -5,6 +5,7 @@ public interface ICar {
     boolean isHasCharger();
     double getEngineCapacity();
     double getChargerPressure();
+    ICar getCar();
 
 
 }

@@ -16,50 +16,27 @@ public class Car implements ICar{
     }
 
     @Override
-    public double getChargerPressure() {
-        return chargerPressure;
+    public double getHorsePower() {
+        return 0;
     }
 
-    public Car setChargerPressure(double chargerPressure) {
-        this.chargerPressure = chargerPressure;
-        return this;
+    @Override
+    public boolean isHasCharger() {
+        return false;
     }
 
     @Override
     public double getEngineCapacity() {
-        return engineCapacity;
-    }
-
-    public Car setEngineCapacity(double engineCapacity) {
-        this.engineCapacity = engineCapacity;
-        return this;
-    }
-
-    public int getSeatsNumber() {
-        return seatsNumber;
-    }
-
-    public Car setSeatsNumber(int seatsNumber) {
-        this.seatsNumber = seatsNumber;
-        return this;
-    }
-
-    public boolean isHasCharger() {
-        return hasCharger;
-    }
-
-    public Car setHasCharger(boolean hasCharger) {
-        this.hasCharger = hasCharger;
-        return this;
+        return 0;
     }
 
     @Override
-    public double getHorsePower() {
-        return horsePower;
+    public double getChargerPressure() {
+        return 0;
     }
 
-    public Car setHorsePower(double horsePower) {
-        this.horsePower = horsePower;
-        return this;
+    @Override
+    public ICar getCar() {
+        return null;
     }
 }
