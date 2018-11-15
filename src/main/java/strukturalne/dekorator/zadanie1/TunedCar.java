@@ -39,6 +39,19 @@ public class TunedCar implements ICar{
     public ICar getCar() {
         return tunedCar;
     }
+
+    @Override
+    public String toString() {
+        return "Builder{" +
+                "tunedCar=" + tunedCar +
+                ", pressureAdded=" + pressureAdded +
+                ", horsePowerMultiplier=" + horsePowerMultiplier +
+                ", setCharger=" + setCharger +
+                ", engineCapacityMultiplier=" + engineCapacityMultiplier +
+                '}';
+    }
+
+
     public static class Builder {
         private ICar tunedCar;
         private double pressureAdded;

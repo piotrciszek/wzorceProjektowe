@@ -16,6 +16,17 @@ public class Car implements ICar{
     }
 
     @Override
+    public String toString() {
+        return "Car{" +
+                "chargerPressure=" + chargerPressure +
+                ", engineCapacity=" + engineCapacity +
+                ", seatsNumber=" + seatsNumber +
+                ", hasCharger=" + hasCharger +
+                ", horsePower=" + horsePower +
+                '}';
+    }
+
+    @Override
     public double getHorsePower() {
         return 0;
     }
