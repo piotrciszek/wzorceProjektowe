@@ -1,0 +1,25 @@
+Xadanie 0
+wprowadzenie
+
+Zadanie 1
+
+Stworzymy aplikację SMS station. Aplikacja ma symulować pracę stacji smsowej.
+Stwórz klasę SmsStation. zakładamy że stacja smsowa otrzymuje jakieś zlecenie o wysłaniu
+smsa, które musi się wydarzyć poprzez broadcast. Ta klasa powinna mieć metodę
+setChanged i notifyObservers, oraz:
+void addPhone(Phone p ) - dodaje telefon do stacji.
+void sendSms(String numer, String tresc)
+Phone jest klasą która otrzymuje smsy. Każdy telefon ma przypisany numer telefonu.
+Metoda sendSms tworzy obiekt typu Message, a następnie rozsyła go. Klasa Message
+posiada dwa pola (tresc i numer). Obiekt Message jest rozsyłany, a następnie wiadomości
+docierają do wszystkich telefonów w pobliżu. Sms po tym jak dotrze do telefonu,
+sprawdzamy czy powinien dotrzeć do tego telefonu (sprawdzamy czy numer z wiadomości
+jest taki jak numer z telefonu).
+Użytkownik z poziomu Main'a wpisuje komendę:
+1235346457 jakas tresc smsa
+opcjonalnie dodaj komendę
+addPhone nr_tel
+alternatywnie do dodawania telefonów do stacji z linii poleceń, możesz dodać kilka telefonów
+w konstruktorze stacji.
+Po otrzymaniu komendy podziel ją przez split na numer (1 słowo komendy) oraz pozostałą
+część komendy - to będzie treść smsa.
