@@ -1,0 +1,23 @@
+Zadanie 0
+
+Stwórz interfejs IFormatterCzcionki, która posiada metodę:
+- public String zamienTekst(String tekstDoZamiany);
+Stwórz klasy implementujące podany intefejs:
+- FormatterUpper - w swojej metodzie zamienTekst podmienia tekst na same wielkie litery
+- FormatterLower - w swojej metodzie zamienTekst podmienia tekst na same małe litery
+- FormatterTrim - w swojej metodzie zamienTekst trimuje tekst (metoda trim() na string)
+- FormatterInverter - zamienia duze litery na małe litery, a małe litery na duże litery
+- FormatterSplitter - dzieli cały tekst na pojedyncze znaki i zwraca z powrotem ten sam
+tekst, tylko dopisuje między wszystkimi znakami dodatkowe spacje (czyli zamienia tekst 'to
+jest tekst' na: 't o j e s t t e k s t')
+Stwórz main. Stwórz jedną zmienną:
+IFormatterCzcionki formatter = new FormatterUpper();
+Stwórz obsługę maina, który powinien obsługiwać dwie komendy:
+- komenda 'zmien' a po niej powinna wystąpić nazwa formattera. np. 'zmien upper', 'zmien
+inverter', 'zmien splitter'. W zależności od tego którego formattera użyjemy, tak powinna się
+zmienić referencja w zmiennej formatter (wyżej zadeklarowana).
+- komenda 'formatuj' po której występuje tekst do sformatowania. np.
+formatuj to jest tekst
+powinno wypisać:
+t o j e s t t e k s t
+jeśli do zmiennej formatter jest przypisany FormatterSplitter.
