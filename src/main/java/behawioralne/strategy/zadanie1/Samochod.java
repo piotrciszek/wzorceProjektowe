@@ -3,16 +3,13 @@ package behawioralne.strategy.zadanie1;
 public class Samochod {
     private String nrRejestracyjny;
     private INaped silnik;
-    private double predkosc;
-    private double iloscPaliwa;
-    private double poziomAkumulatorow;
+    private double predkosc = 0;
+    private double iloscPaliwa = 60;
+    private double poziomAkumulatorow = 60;
 
-    public Samochod(String nrRejestracyjny, INaped silnik, double predkosc, double iloscPaliwa, double poziomAkumulatorow) {
+    public Samochod(String nrRejestracyjny, INaped silnik) {
         this.nrRejestracyjny = nrRejestracyjny;
         this.silnik = silnik;
-        this.predkosc = predkosc;
-        this.iloscPaliwa = iloscPaliwa;
-        this.poziomAkumulatorow = poziomAkumulatorow;
     }
 
     public String getNrRejestracyjny() {
